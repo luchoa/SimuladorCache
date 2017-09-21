@@ -20,7 +20,7 @@ public class Teste {
 		System.out.println("Page Hits FIFO: " + fifo.getCacheHit());
 		
 
-		/* LRU
+		//LRU
 		AlgoritmoDeSubstituicao lru = new LRU(3);
 
 		for (int i = 0; i < (stringReferencia.length); i++) { //fazer ler de um arquivo
@@ -31,7 +31,7 @@ public class Teste {
 		System.out.println("Page Faults LRU: " + lru.getCacheMiss());
 		System.out.println("Page Hits LRU: " + lru.getCacheHit());
 		
-		*/
+		
 	}
 
 }
