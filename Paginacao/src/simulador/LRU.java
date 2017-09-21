@@ -2,7 +2,7 @@ package simulador;
 
 import java.util.LinkedList;
 
-public class LRU extends AlgoritmoDeSubstituicao<QuadroLRU> {
+public class LRU extends AlgoritmoDeSubstituicao<Quadro> {
 
 	private int topo = 0;
 	private int base = numeroDeQuadros - 1;
@@ -10,16 +10,16 @@ public class LRU extends AlgoritmoDeSubstituicao<QuadroLRU> {
 
 	public LRU(int numeroDeQuadros) {
 		super(numeroDeQuadros);
-		this.quadros = new LinkedList<QuadroLRU>();
+		this.quadros = new LinkedList<Quadro>();
 	}
 
 	
 	
 	 @Override 
 	 public void inserir(String valor) {
-		 QuadroLRU quadro = new QuadroLRU(valor);
+		 Quadro quadro = new Quadro(valor);
 		 
-		 if(!quadros.contains(quadro)) {
+		 if(!quadros.contains(quadro)) { //VERIFICAR QUAL O METODO CORRETO PRA VERIFICAR QUANDO O QUADRO ESTÁ NA PILHA
 			 if (quadros.size() < numeroDeQuadros) {
 				 quadros.add(topo, quadro);
 			 }else {
