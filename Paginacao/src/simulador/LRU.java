@@ -30,12 +30,13 @@ public class LRU extends AlgoritmoDeSubstituicao <QuadroLRU> {
 
 		} else {
 			for (int i = 0; i < quadros.size(); i++) {
-				if(quadros.get(i).getValor().equals("0")) {
-					
-				}
-				quadros.set(i, quadros.get(i).);
-				cacheHit++;
+				if(quadros.get(i).getValor().contains(valor)) 
+					quadros.get(i).setZero();
+				else 
+					quadros.get(i).incIdade();					
+				
 			}
+			cacheHit++;
 			
 		}
 	}
