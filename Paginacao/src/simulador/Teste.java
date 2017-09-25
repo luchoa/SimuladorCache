@@ -50,6 +50,19 @@ public class Teste {
 		System.out.println("Page Hits LFU: " + lfu.getCacheHit());
 		System.out.println("_______________________________________________");
 		
+		//Random
+		System.out.println("Tamanho da Cache (Random): ");
+		AlgoritmoDeSubstituicao prandom = new PRandom(scanner.nextInt());
+
+		for (int i = 0; i < (stringReferencia.length); i++) { //fazer ler de um arquivo
+			prandom.inserir(stringReferencia[i]);
+			prandom.imprimirQuadros();
+
+		}
+		System.out.println("Page Faults LFU: " + prandom.getCacheMiss());
+		System.out.println("Page Hits LFU: " + prandom.getCacheHit());
+		System.out.println("_______________________________________________");
+		
 		
 	}
 
