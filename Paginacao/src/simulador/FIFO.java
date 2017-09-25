@@ -11,7 +11,6 @@ public class FIFO extends AlgoritmoDeSubstituicao {
 		this.quadros = new LinkedList<>();
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public void inserir(String valor) {
 		
