@@ -37,6 +37,19 @@ public class Teste {
 		System.out.println("Page Hits LRU: " + lru.getCacheHit());
 		System.out.println("_______________________________________________");
 		
+		//LFU
+		System.out.println("Tamanho da Cache (LFU): ");
+		AlgoritmoDeSubstituicao lfu = new LFU(scanner.nextInt());
+
+		for (int i = 0; i < (stringReferencia.length); i++) { //fazer ler de um arquivo
+			lfu.inserir(stringReferencia[i]);
+			lfu.imprimirQuadros();
+
+		}
+		System.out.println("Page Faults LFU: " + lfu.getCacheMiss());
+		System.out.println("Page Hits LFU: " + lfu.getCacheHit());
+		System.out.println("_______________________________________________");
+		
 		
 	}
 
