@@ -35,7 +35,7 @@ public class Teste {
 	        stringReferencia = referencia.split(";");        	
 	        				
 	        	// FIFO
-	    		System.out.println("Tamanho da Cache (FIFO): ");
+	    		System.out.println("Páginas Armazenadas na Cache (FIFO): ");
 	    		AlgoritmoDeSubstituicao fifo = new FIFO(tamCache);
 
 	    		for (int i = 0; i < (stringReferencia.length); i++) { //fazer ler de um arquivo
@@ -49,7 +49,7 @@ public class Teste {
 	    		
 
 	    		//LRU
-	    		System.out.println("Tamanho da Cache (LRU): ");
+	    		System.out.println("Páginas Armazenadas na Cache (LRU): ");
 	    		AlgoritmoDeSubstituicao lru = new LRU(tamCache);
 
 	    		for (int i = 0; i < (stringReferencia.length); i++) { //fazer ler de um arquivo
@@ -62,7 +62,7 @@ public class Teste {
 	    		System.out.println("_______________________________________________");
 	    		
 	    		//LFU
-	    		System.out.println("Tamanho da Cache (LFU): ");
+	    		System.out.println("Páginas Armazenadas na Cache (LFU): ");
 	    		AlgoritmoDeSubstituicao lfu = new LFU(tamCache);
 
 	    		for (int i = 0; i < (stringReferencia.length); i++) { //fazer ler de um arquivo
@@ -75,7 +75,7 @@ public class Teste {
 	    		System.out.println("_______________________________________________");
 	    		
 	    		//Random
-	    		System.out.println("Tamanho da Cache (Random): ");
+	    		System.out.println("Páginas Armazenadas na Cache (Random): ");
 	    		AlgoritmoDeSubstituicao prandom = new PRandom(tamCache);
 
 	    		for (int i = 0; i < (stringReferencia.length); i++) { //fazer ler de um arquivo
