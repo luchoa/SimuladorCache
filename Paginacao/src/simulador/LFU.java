@@ -60,12 +60,7 @@ public class LFU extends AlgoritmoDeSubstituicao {
 			 while(i<quadrosLFU.size() && quadro.getFrequencia()>= quadrosLFU.get(i).getFrequencia()){
 				 i++;
 			 }
-			 //Caso - Freq Menor q todos
-			 if(i==0)
-				 quadrosLFU.add(0, quadro);
-			 //Caso Contrário - Geral
-			 else
-				 quadrosLFU.add(i, quadro);
+			 quadrosLFU.add(i, quadro);
 		 }	 
 	 }
 	 

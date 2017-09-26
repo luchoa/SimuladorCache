@@ -8,7 +8,7 @@ public class PRandom extends AlgoritmoDeSubstituicao {
 	private int insere = 0;
 
 	public PRandom(int numeroDeQuadros) {
-		super(numeroDeQuadros);
+		super(numeroDeQuadros);  
 		this.quadros = new LinkedList<>();
 	}
 
