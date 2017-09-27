@@ -83,8 +83,8 @@ public class Teste {
 	    			prandom.imprimirQuadros();
 
 	    		}
-	    		System.out.println("Page Faults LFU: " + prandom.getCacheMiss());
-	    		System.out.println("Page Hits LFU: " + prandom.getCacheHit());
+	    		System.out.println("Page Faults Random: " + prandom.getCacheMiss());
+	    		System.out.println("Page Hits Random: " + prandom.getCacheHit());
 	    		System.out.println("_______________________________________________");
 	    		
 	
