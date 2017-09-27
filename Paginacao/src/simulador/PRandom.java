@@ -29,8 +29,7 @@ public class PRandom extends AlgoritmoDeSubstituicao {
 			}
 			cacheMiss++;
 
-		}
-		
-		cacheHit ++;
+		}else
+			cacheHit ++;
 	}
 }

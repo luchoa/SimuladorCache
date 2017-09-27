@@ -14,7 +14,7 @@ public class FIFO extends AlgoritmoDeSubstituicao {
 	@Override
 	public void inserir(String valor) {
 		
-		//Verifica se o valor ja está na cache
+		//Verifica se o valor ja estï¿½ na cache
 		if (!quadros.contains(valor)) {
 
 			// se a quantidade de paginas na memoria for menor que o numero de quadros
@@ -30,9 +30,8 @@ public class FIFO extends AlgoritmoDeSubstituicao {
 			}
 			cacheMiss++;
 
-		}
-		
-		cacheHit ++;
+		}else
+			cacheHit ++;
 	}
 	
 	
